@@ -1,8 +1,9 @@
-# 📊 Churn Insight: [Try it out](https://churn-insight.onrender.com/)
+# 📊 Churn Insight
 
-# 🔌 API: [FastAPI](https://customer-churn-predictor-b4et.onrender.com/docs#/default/predict_predict_post)
-# 🖥️ UI: [Streamlit](https://churn-insight.onrender.com/)
-###
+ 🔌 API Created: [FastAPI](https://customer-churn-predictor-b4et.onrender.com/docs#/default/predict_predict_post)
+ 
+ 🖥️ UI: [Streamlit](https://churn-insight.onrender.com/)
+##
 About:
 This project demonstrates a full machine learning pipeline for predicting loan eligibility, deployed using both a **FastAPI backend** and a **Streamlit frontend**.
 ##
