@@ -1,9 +1,10 @@
 import streamlit as st # lets you build the web UI (form, buttons, sliders).
 import requests
 
+st.set_page_config(layout="wide") # sets the layout of the page to wide, so that it takes the full width of the browser window.
 # Adds a page title at the top of the Streamlit app.
 st.title("Churn Prediction API")
-st.set_page_config(layout="wide") # sets the layout of the page to wide, so that it takes the full width of the browser window.
+
 # FastAPI endpoint URL
 API_URL = "https://customer-churn-predictor-b4et.onrender.com/predict" # This is where Streamlit will send the input data to get a result.
 
