@@ -41,7 +41,7 @@ streamlit run app/streamlit_app.py
 - Sends data to the FastAPI backend and shows predictions in real-time
 
 ## ✅ Setup Instructions:
-# Recommended Python 3.10 or 3.11 (scikit-learn does not yet support 3.13)
+ Recommended Python 3.10 or 3.11 (scikit-learn does not yet support 3.13)
 ```python
 python -m venv venv
 ```
@@ -55,11 +55,11 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-# Run API
+ Run API
 ```bash
 uvicorn app.main:app --reload
 ```
-# In another terminal
+ In another terminal
 ```bash
 streamlit run app/streamlit_app.py
 ```
