@@ -1,7 +1,11 @@
-# customer-churn-predictor
+# 📊 Churn Insight: [Try it out](https://churn-insight.onrender.com/)
 
+# 🔌 API: [FastAPI](https://customer-churn-predictor-b4et.onrender.com/docs#/default/predict_predict_post)
+# 🖥️ UI: [Streamlit](https://churn-insight.onrender.com/)
+###
+About:
 This project demonstrates a full machine learning pipeline for predicting loan eligibility, deployed using both a **FastAPI backend** and a **Streamlit frontend**.
-
+##
 ## 🔧 Tech Stack
 - Python (v3.10 or v3.11 recommended)
 - NumPy, Pandas, Scikit-learn
@@ -28,26 +32,34 @@ uvicorn app.main:app --reload
 
 POST /predict: Accepts JSON input and returns predicted label + probability
 
-## Streamlit Web App
+## 🌐 Streamlit Web App
 Start the frontend:
 ```bash
-  streamlit run app/streamlit_app.py
+streamlit run app/streamlit_app.py
 ```
 - Simple form-based input UI
 - Sends data to the FastAPI backend and shows predictions in real-time
 
-## Setup Instructions:
+## ✅ Setup Instructions:
 # Recommended Python 3.10 or 3.11 (scikit-learn does not yet support 3.13)
-
+```python
 python -m venv venv
+```
+```bash
 source venv/bin/activate
-
+```
+```python
 pip install --upgrade pip
+```
+```python
 pip install -r requirements.txt
+```
 
 # Run API
+```bash
 uvicorn app.main:app --reload
-
+```
 # In another terminal
+```bash
 streamlit run app/streamlit_app.py
-
+```
