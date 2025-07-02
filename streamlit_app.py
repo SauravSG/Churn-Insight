@@ -6,7 +6,8 @@ st.set_page_config(layout="wide") # sets the layout of the page to wide, so that
 st.title("Churn Prediction API")
 
 # FastAPI endpoint URL
-API_URL = "https://customer-churn-predictor-b4et.onrender.com/docs" # This is where Streamlit will send the input data to get a result.
+API_URL = "https://customer-churn-predictor-b4et.onrender.com/api/predict"
+
 
 # Building the input form
 with st.form("churn_form"):
