@@ -46,7 +46,9 @@ def predict(body: churnRequestBody):
     print(body.dict(by_alias=True))
     try:
         #1. convert the input data into dataframe and turn the json into Python dictionary with exact keys like hasCreditCard.
-        df = pd.DataFrame([body.dict(by_alias=True)]).reindex(columns=Features)
+        df = pd.DataFrame([body.dict(by_alias=True)])
+        df = pd.get_dummies(df)  # Or use your original encoder
+        df = df.reindex(columns=Features, fill_value=0)
         
         #2. scaling it like we did while training
         x_scaled = scaler.transform(df)
